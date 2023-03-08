@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", "Inter", sans-serif;
+}
+
+:root {
+  --primary: #00b074;
+  --secondary: #2b9bff;
+  --light: #effdf5;
+  --dark: #2b3940;
+  --normalWhite: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+/* --------------NAVIGATION BAR STYLIN-------------- */
+nav {
+  width: 100%;
+  height: 70px;
+  background: var(--normalWhite);
+  padding: 0px 0 0 5%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 800px;
+  font-family: "Inter", sans-serif;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: right;
+  margin: 0 24px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+nav ul li a .fa-solid {
+  margin-left: 5px;
+}
+
+.active-link,
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+.postAJob {
+  width: 220px;
+  background: var(--primary);
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  color: var(--normalWhite);
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+.postAJob .fa-solid {
+  margin-left: 15px;
+}
+
+/* ------------------------Media Queries------------------------ */
+
+@media screen and (max-width: 480px) {
+}
