@@ -157,6 +157,7 @@ label:hover {
 .slideText {
   font-size: 20px;
   color: var(--light);
+  max-width: 700px;
 }
 
 .btn {
@@ -178,6 +179,26 @@ label:hover {
 .active-btn,
 .btn:hover {
   background: var(--secondary);
+}
+
+.sliderIcon {
+  position: absolute;
+  right: 10%;
+  bottom: 40%;
+  display: block;
+}
+
+.sliderIcon .swiper-button-next::after,
+.sliderIcon .swiper-button-prev::after {
+  font-size: 20px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 15px;
+  border: 1px solid#fff;
+  align-items: center;
+  color: var(--normalWhite);
+  text-align: center;
 }
 
 /* ------------------------Media Queries------------------------ */
@@ -220,5 +241,35 @@ label:hover {
 
   .logo {
     font-size: 30px;
+  }
+
+  .display-3 {
+    font-size: 30px;
+    /* margin-bottom: 10px; */
+  }
+
+  .darkLayer::before {
+    left: 5%;
+    /* height: 80%; */
+  }
+
+  .slideText {
+    font-size: 14px;
+    max-width: 350px;
+    /* margin-bottom: 10px; */
+  }
+
+  .hero-slide img {
+    object-fit: cover;
+  }
+
+  .frame {
+    margin-left: -50px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
   }
 }
