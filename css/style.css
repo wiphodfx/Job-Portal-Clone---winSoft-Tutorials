@@ -49,6 +49,7 @@ nav ul li {
   text-align: right;
   margin: 0 24px;
   list-style: none;
+  animation: floawIn 0.5s linear forwards;
 }
 
 nav ul li a {
@@ -56,6 +57,8 @@ nav ul li a {
   font-size: 14px;
   color: var(--dark);
   font-weight: 500;
+  transition: 5s ease-out;
+  cursor: pointer;
 }
 
 nav ul li a .fa-solid {
@@ -107,6 +110,39 @@ label {
 
 label:hover {
   border: 2px solid #ccc;
+}
+
+/* -----------------------------DROP DOWN MENU----------------------------- */
+.submenu {
+  display: none;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  background: var(--normalWhite);
+  margin-top: 26px;
+  margin-left: -55px;
+}
+
+nav ul li:hover .submenu ul {
+  /* display: block; */
+  margin: 6px;
+}
+
+nav ul li:hover .submenu ul li {
+  display: block;
+  width: 100px;
+  padding: 8px;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+@keyframes floawIn {
+  100% {
+    transition: 0.5s ease-in;
+  }
 }
 
 /* ----------------------Hero Section---------------------- */
