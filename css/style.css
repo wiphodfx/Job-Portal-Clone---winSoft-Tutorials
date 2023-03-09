@@ -347,6 +347,28 @@ nav ul li:hover .submenu ul li {
   opacity: 1;
 }
 
+/* -------------------------TO TOP STYLING------------------------- */
+.toUp a {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: var(--normalWhite);
+  position: fixed;
+  right: 5%;
+  bottom: 30px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--normalWhite);
+}
+
+.toUp .fa-solid {
+  text-align: center;
+  font-size: 18px;
+}
+
 /* ------------------------Media Queries------------------------ */
 
 @media screen and (max-width: 480px) {
