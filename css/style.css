@@ -369,6 +369,123 @@ nav ul li:hover .submenu ul li {
   font-size: 18px;
 }
 
+/* --------------------------JOB LISTING SECTION STYLING-------------------------- */
+
+.jobListing {
+  width: 100%;
+  padding: 60px 5%;
+}
+
+.jobSection {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.jobSection img {
+  border: 1px solid #ccc;
+}
+
+.jobTitle {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.jobTitle h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.jobTitle span {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.jobTitle .fa-solid,
+.jobTitle .fa-regular {
+  margin-right: 8px;
+  color: var(--primary);
+}
+
+.applyCol {
+  text-align: right;
+}
+
+.applyCol button {
+  padding: 10px 15px;
+  outline: none;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--primary);
+  color: var(--normalWhite);
+}
+
+.applyCol span {
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.applyCol .fa-regular {
+  margin-right: 15px;
+  color: var(--primary);
+}
+
+.applyCol .fa-solid {
+  margin-right: 8px;
+  color: var(--primary);
+}
+
+.classFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+  position: relative;
+}
+
+.classFrame::before {
+  content: "";
+  position: absolute;
+  width: 21%;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+.classFrame .slidePage {
+  margin: 10px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+
+.classFrame .slidePage::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background: var(--primary);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.activeSlide,
+.slidePage:hover::after {
+  width: 100%;
+}
+
+.jobWrapper {
+  display: none;
+}
+
+.activeJD {
+  display: block;
+}
+
 /* ------------------------Media Queries------------------------ */
 
 @media screen and (max-width: 480px) {
@@ -451,8 +568,6 @@ nav ul li:hover .submenu ul li {
     width: 100%;
   }
 
-  .xploreCategoryFrame {
-  }
   .xploreCategoryFrame h1 {
     font-size: 25px;
     margin-top: 100px;
