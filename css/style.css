@@ -245,11 +245,11 @@ nav ul li:hover .submenu ul li {
 
 .searchBar {
   width: 100%;
-  height: 100px;
   background: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px 5%;
 }
 
 .inputGroup {
@@ -439,5 +439,30 @@ nav ul li:hover .submenu ul li {
     padding: 5px 10px;
     width: 150px;
     height: 40px;
+  }
+
+  .inputField {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .searchBtn {
+    width: 100%;
+  }
+
+  .xploreCategoryFrame {
+  }
+  .xploreCategoryFrame h1 {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  .xploreCategory {
+    display: block;
+  }
+
+  .xplore {
+    margin: 10px;
   }
 }
