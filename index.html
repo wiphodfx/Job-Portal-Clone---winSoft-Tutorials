@@ -188,14 +188,16 @@
         </div>
       </section>
       <section class="jobListing">
-        <h1>Job Listing</h1>
-        <div class="SubFields">
+        <h1 class="reveals">Job Listing</h1>
+        <div class="SubFields reveals">
           <div class="classFrame">
-            <p class="slidePage activeSlide">Featured</p>
-            <p class="slidePage">Full Time</p>
-            <p class="slidePage">Part Time</p>
+            <p class="job-tablinks active-tablink" onclick="openTab('feature')">
+              Featured
+            </p>
+            <p class="job-tablinks" onclick="openTab('fulltime')">Full Time</p>
+            <p class="job-tablinks" onclick="openTab('parttime')">Part Time</p>
           </div>
-          <div class="jobWrapper activeJD">
+          <div class="jobWrapper activeJD" id="feature">
             <div class="jobSection">
               <img src="images/com-logo-1.jpg" alt="" />
               <div class="jobTitle">
@@ -216,9 +218,9 @@
               </div>
             </div>
             <div class="jobSection">
-              <img src="images/com-logo-1.jpg" alt="" />
+              <img src="images/com-logo-2.jpg" alt="" />
               <div class="jobTitle">
-                <h3>Software Engineer</h3>
+                <h3>Marketing Manager</h3>
                 <span
                   ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
                 >
@@ -235,30 +237,9 @@
               </div>
             </div>
             <div class="jobSection">
-              <img src="images/com-logo-1.jpg" alt="" />
+              <img src="images/com-logo-3.jpg" alt="" />
               <div class="jobTitle">
-                <h3>Software Engineer</h3>
-                <span
-                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
-                >
-                <span><i class="fa-regular fa-clock"></i> Full Time</span>
-                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
-              </div>
-              <div class="applyCol">
-                <i class="fa-regular fa-heart"></i>
-                <button type="button">Apply Now</button>
-                <span
-                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
-                  2045</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="jobWrapper">
-            <div class="jobSection">
-              <img src="images/com-logo-1.jpg" alt="" />
-              <div class="jobTitle">
-                <h3>Software Engineer</h3>
+                <h3>Product Designer</h3>
                 <span
                   ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
                 >
@@ -275,9 +256,9 @@
               </div>
             </div>
             <div class="jobSection">
-              <img src="images/com-logo-1.jpg" alt="" />
+              <img src="images/com-logo-4.jpg" alt="" />
               <div class="jobTitle">
-                <h3>Software Engineer</h3>
+                <h3>Creative Director</h3>
                 <span
                   ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
                 >
@@ -294,9 +275,9 @@
               </div>
             </div>
             <div class="jobSection">
-              <img src="images/com-logo-1.jpg" alt="" />
+              <img src="images/com-logo-5.jpg" alt="" />
               <div class="jobTitle">
-                <h3>Software Engineer</h3>
+                <h3>Wordpress Developer</h3>
                 <span
                   ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
                 >
@@ -313,7 +294,7 @@
               </div>
             </div>
           </div>
-          <div class="jobWrapper">
+          <div class="jobWrapper" id="fulltime">
             <div class="jobSection">
               <img src="images/com-logo-1.jpg" alt="" />
               <div class="jobTitle">
@@ -334,6 +315,84 @@
               </div>
             </div>
             <div class="jobSection">
+              <img src="images/com-logo-2.jpg" alt="" />
+              <div class="jobTitle">
+                <h3>Marketing Manager</h3>
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
+                >
+                <span><i class="fa-regular fa-clock"></i> Full Time</span>
+                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
+              </div>
+              <div class="applyCol">
+                <i class="fa-regular fa-heart"></i>
+                <button type="button">Apply Now</button>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
+                  2045</span
+                >
+              </div>
+            </div>
+            <div class="jobSection">
+              <img src="images/com-logo-3.jpg" alt="" />
+              <div class="jobTitle">
+                <h3>Product Designer</h3>
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
+                >
+                <span><i class="fa-regular fa-clock"></i> Full Time</span>
+                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
+              </div>
+              <div class="applyCol">
+                <i class="fa-regular fa-heart"></i>
+                <button type="button">Apply Now</button>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
+                  2045</span
+                >
+              </div>
+            </div>
+            <div class="jobSection">
+              <img src="images/com-logo-4.jpg" alt="" />
+              <div class="jobTitle">
+                <h3>Creative Director</h3>
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
+                >
+                <span><i class="fa-regular fa-clock"></i> Full Time</span>
+                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
+              </div>
+              <div class="applyCol">
+                <i class="fa-regular fa-heart"></i>
+                <button type="button">Apply Now</button>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
+                  2045</span
+                >
+              </div>
+            </div>
+            <div class="jobSection">
+              <img src="images/com-logo-5.jpg" alt="" />
+              <div class="jobTitle">
+                <h3>Wordpress Developer</h3>
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
+                >
+                <span><i class="fa-regular fa-clock"></i> Full Time</span>
+                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
+              </div>
+              <div class="applyCol">
+                <i class="fa-regular fa-heart"></i>
+                <button type="button">Apply Now</button>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
+                  2045</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="jobWrapper" id="parttime">
+            <div class="jobSection">
               <img src="images/com-logo-1.jpg" alt="" />
               <div class="jobTitle">
                 <h3>Software Engineer</h3>
@@ -353,9 +412,66 @@
               </div>
             </div>
             <div class="jobSection">
-              <img src="images/com-logo-1.jpg" alt="" />
+              <img src="images/com-logo-2.jpg" alt="" />
               <div class="jobTitle">
-                <h3>Software Engineer</h3>
+                <h3>Marketing Manager</h3>
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
+                >
+                <span><i class="fa-regular fa-clock"></i> Full Time</span>
+                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
+              </div>
+              <div class="applyCol">
+                <i class="fa-regular fa-heart"></i>
+                <button type="button">Apply Now</button>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
+                  2045</span
+                >
+              </div>
+            </div>
+            <div class="jobSection">
+              <img src="images/com-logo-3.jpg" alt="" />
+              <div class="jobTitle">
+                <h3>Product Designer</h3>
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
+                >
+                <span><i class="fa-regular fa-clock"></i> Full Time</span>
+                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
+              </div>
+              <div class="applyCol">
+                <i class="fa-regular fa-heart"></i>
+                <button type="button">Apply Now</button>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
+                  2045</span
+                >
+              </div>
+            </div>
+            <div class="jobSection">
+              <img src="images/com-logo-4.jpg" alt="" />
+              <div class="jobTitle">
+                <h3>Creative Director</h3>
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
+                >
+                <span><i class="fa-regular fa-clock"></i> Full Time</span>
+                <span><i class="fa-solid fa-money-bill"></i> $123 - $456</span>
+              </div>
+              <div class="applyCol">
+                <i class="fa-regular fa-heart"></i>
+                <button type="button">Apply Now</button>
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> Date Line:01 Jan,
+                  2045</span
+                >
+              </div>
+            </div>
+            <div class="jobSection">
+              <img src="images/com-logo-5.jpg" alt="" />
+              <div class="jobTitle">
+                <h3>Wordpress Developer</h3>
                 <span
                   ><i class="fa-solid fa-location-dot"></i> Rewa, INDIA</span
                 >

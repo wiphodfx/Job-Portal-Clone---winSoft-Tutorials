@@ -36,3 +36,20 @@ function reveal() {
     }
   }
 }
+
+// -------------------------OPEN FEATURES TAB-------------------------
+
+var tabLinks = document.getElementsByClassName("job-tablinks");
+var tabContents = document.getElementsByClassName("jobWrapper");
+
+function openTab(tabname) {
+  for (tablink of tabLinks) {
+    tablink.classList.remove("active-tablink");
+  }
+
+  for (tabcontent of tabContents) {
+    tabcontent.classList.remove("activeJD");
+  }
+  event.currentTarget.classList.add("active-tablink");
+  document.getElementById(tabname).classList.add("activeJD");
+}
