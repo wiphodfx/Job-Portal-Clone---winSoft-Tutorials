@@ -1,10 +1,9 @@
 :root {
-  --primary: #00b074; green
-  --secondary: #2b9bff; blue
-  --light: #effdf5; white
-  --dark: #2b3940; black
+--primary: #00b074; green
+--secondary: #2b9bff; blue
+--light: #effdf5; white
+--dark: #2b3940; black
 }
-
 
 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29035.235998024!2d81.28556709234934!3d24.54068012824352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39845a348b85dbbd%3A0xbc368e68a40a6da9!2sRewa%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1664383570024!5m2!1sen!2sin"
@@ -35,7 +34,6 @@ Rewa, Madhya Pradesh, IND
 info@ajaykumar.com
 +919191919191
 
-
 Company
 About Us Contact Us Our Services Privacy Policy Terms & Condition
 Quick Links
@@ -47,12 +45,11 @@ Rewa, Madhya Pradesh, IND
 
 info@ajaykumar.com
 
-   
 Newsletter
 Dolor amet sit justo amet elitr clita ipsum elitr est.
 
 Your email
- SignUp
+SignUp
 © Your Site Name, All Right Reserved. Designed By Code By Ajay
 Home Cookies Help FQAs
 
@@ -63,7 +60,6 @@ Pages
 Testimonial
 Our Clients Say!!!
 Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-
 
 Client Name
 Profession
@@ -98,7 +94,6 @@ Design & Creative
 123 Vacancy
 
 Company
-
 
 Job Detail
 Home
@@ -149,7 +144,6 @@ Date Line: 01 Jan, 2045
 Company Detail
 Ipsum dolor ipsum accusam stet et et diam dolores, sed rebum sadipscing elitr vero dolores. Lorem dolore elitr justo et no gubergren sadipscing, ipsum et takimata aliquyam et rebum est ipsum lorem diam. Et lorem magna eirmod est et et sanctus et, kasd clita labore.
 
-
 Job Listing
 Featured
 Full Time
@@ -157,38 +151,34 @@ Part Time
 
 Software Engineer
 Rewa, INDIA Full Time $123 - $456
- Apply Now
+Apply Now
 Date Line: 01 Jan, 2045
 
 Marketing Manager
 Rewa, INDIA Full Time $123 - $456
- Apply Now
+Apply Now
 Date Line: 01 Jan, 2045
 
 Product Designer
 Rewa, INDIA Full Time $123 - $456
- Apply Now
+Apply Now
 Date Line: 01 Jan, 2045
 
 Creative Director
 Rewa, INDIA Full Time $123 - $456
- Apply Now
+Apply Now
 Date Line: 01 Jan, 2045
 
 Wordpress Developer
 Rewa, INDIA Full Time $123 - $456
- Apply Now
+Apply Now
 Date Line: 01 Jan, 2045
 Browse More Jobs
-
 
 About Us
 Home
 Pages
 About
-
-
-
 
 We Help To Get The Best Job And Find A Talent
 Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
@@ -201,7 +191,6 @@ Clita duo justo magna dolore erat amet
 
 Read More
 
-
 Find The Perfect Job That You Deserved
 Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
 
@@ -211,4 +200,3 @@ Find The Best Startup Job That Fit You
 Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
 
 Search A Job Find A Talent
-
