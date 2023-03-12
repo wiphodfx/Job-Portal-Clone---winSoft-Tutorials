@@ -53,3 +53,65 @@ function openTab(tabname) {
   event.currentTarget.classList.add("active-tablink");
   document.getElementById(tabname).classList.add("activeJD");
 }
+
+// ------------------------TESTIMONIAL SCRIPT------------------------
+
+var userText = document.getElementById("slide1");
+var activeText = document.getElementsByClassName("testimonial-text");
+var btn = document.getElementsByClassName("btn1");
+
+//        function moveCont(){
+//            document.getElementById("slide").style.animationDirection ="reverse";
+//        }
+
+btn[0].onclick = function () {
+  userText.style.transform = "translateX(0px)";
+  for (btns of btn) {
+    btns.classList.remove("active-btn1");
+    for (activeTxt of activeText) {
+      activeTxt.classList.remove("active-text1");
+    }
+  }
+  let i = Array.from(btn).indexOf(event.target);
+  this.classList.add("active-btn1");
+  activeText[i + 1].classList.add("active-text1");
+};
+
+btn[1].onclick = function () {
+  userText.style.transform = "translateX(-377px)";
+  for (btns of btn) {
+    btns.classList.remove("active-btn1");
+    for (activeTxt of activeText) {
+      activeTxt.classList.remove("active-text1");
+    }
+  }
+  let i = Array.from(btn).indexOf(event.target);
+  this.classList.add("active-btn1");
+  activeText[i + 1].classList.add("active-text1");
+};
+
+btn[2].onclick = function () {
+  userText.style.transform = "translateX(-754px)";
+  for (btns of btn) {
+    btns.classList.remove("active-btn1");
+    for (activeTxt of activeText) {
+      activeTxt.classList.remove("active-text1");
+    }
+  }
+  let i = Array.from(btn).indexOf(event.target);
+  this.classList.add("active-btn1");
+  activeText[i + 1].classList.add("active-text1");
+};
+
+btn[3].onclick = function () {
+  userText.style.transform = "translateX(-1131px)";
+  for (btns of btn) {
+    btns.classList.remove("active-btn1");
+    for (activeTxt of activeText) {
+      activeTxt.classList.remove("active-text1");
+    }
+  }
+  let i = Array.from(btn).indexOf(event.target);
+  this.classList.add("active-btn1");
+  activeText[i + 1].classList.add("active-text1");
+};
