@@ -54,7 +54,7 @@ nav ul li {
   margin: 0 24px;
   padding: 10px;
   list-style: none;
-  animation: floawIn 0.5s linear forwards;
+  animation: flowIn 0.5s linear forwards;
 }
 
 nav ul li a {
@@ -142,7 +142,7 @@ nav ul li:hover .submenu ul li {
   text-align: left;
 }
 
-@keyframes floawIn {
+@keyframes flowIn {
   100% {
     transition: 0.5s ease-in;
   }
@@ -163,7 +163,8 @@ nav ul li:hover .submenu ul li {
 
 .hero-slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .darkLayer {
@@ -174,6 +175,8 @@ nav ul li:hover .submenu ul li {
   position: absolute;
   background: rgba(43, 57, 64, 0.5);
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .darkLayer::before {
@@ -505,7 +508,7 @@ nav ul li:hover .submenu ul li {
   justify-content: space-between;
 }
 
-.col-1 {
+.jobFinder .col-1 {
   flex-basis: 47.5%;
   display: grid;
   grid-template-columns: auto auto;
@@ -545,7 +548,7 @@ nav ul li:hover .submenu ul li {
 }
 
 /* ------------------TESIMONIAL SECTION------------------ */
-.testimonial {
+.testimonialCover {
   width: 100%;
   background: var(--normalWhite);
   display: flex;
@@ -556,7 +559,7 @@ nav ul li:hover .submenu ul li {
   position: relative;
 }
 
-.testimonial h1 {
+.testimonialCover h1 {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -593,6 +596,7 @@ nav ul li:hover .submenu ul li {
 
 .userText p {
   font-size: 16px;
+  color: var(--light);
 }
 
 .userProfile {
@@ -608,11 +612,13 @@ nav ul li:hover .submenu ul li {
 .userProfile div span {
   font-weight: 700;
   font-size: 14px;
+  color: var(--light);
 }
 
 .userProfile div p {
   font-size: 12px;
   margin-top: 30px;
+  color: var(--light);
 }
 
 .indicator {
@@ -637,6 +643,109 @@ nav ul li:hover .submenu ul li {
 
 .active-text1 {
   background: var(--primary);
+}
+
+/* ------------------JOB DESCRIPTION SECTION------------------ */
+.jobDescription {
+  width: 100%;
+  padding: 0 5%;
+}
+
+.jobSect {
+  width: 500px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.descRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descCol1 {
+  flex-basis: 65%;
+  text-align: left;
+}
+
+.jobTitle {
+  margin-bottom: 20px;
+}
+
+.jobTitle h4 {
+  margin-bottom: 20px;
+}
+
+.jobTitle p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.jobTitle ul li {
+  list-style: none;
+}
+
+.descCol2 {
+  flex-basis: 25%;
+}
+.details {
+  padding: 30px;
+  background: #dff5ee;
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-size: 14px;
+}
+
+.descCol2 h4 {
+  margin-bottom: 20px;
+}
+.descCol2 ul li {
+  list-style: none;
+}
+
+.descCol2 .fa-solid {
+  color: var(--primary);
+}
+
+.jobApplication h4 {
+  margin: 20px 0;
+}
+
+.inputSize {
+  width: 48%;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: 1px solid#ccc;
+  outline: none;
+}
+
+.inputField-1 {
+  width: 98%;
+  margin-bottom: 10px;
+}
+
+.formLayout1 textarea {
+  width: 96%;
+  height: 120px;
+  resize: none;
+  padding: 15px;
+  border: 1px solid#ccc;
+  margin-bottom: 10px;
+}
+
+.jobApplication button {
+  width: 96%;
+  padding: 10px 15px;
+  background: var(--primary);
+  border: 0;
+  outline: none;
+  color: var(--normalWhite);
+}
+
+.jobApplication {
+  margin-bottom: 40px;
 }
 
 /* ------------------------Media Queries------------------------ */
@@ -688,15 +797,9 @@ nav ul li:hover .submenu ul li {
     margin-bottom: 10px;
   }
 
-  .darkLayer::before {
-    left: 5%;
-    height: 90%;
-  }
-
   .slideText {
-    font-size: 14px;
+    font-size: 12px;
     max-width: 350px;
-    /* margin-bottom: 10px; */
   }
 
   .hero-slide img {
@@ -771,9 +874,5 @@ nav ul li:hover .submenu ul li {
     transform: translateX(-50%);
     position: relative;
     left: 50%;
-  }
-
-  .testimonial {
-    display: none;
   }
 }
